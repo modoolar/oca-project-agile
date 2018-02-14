@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# Copyright 2017 - 2018 Modoolar <info@modoolar.com>
+# License LGPLv3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+-->
+<odoo>
+    <template id="assets_css" name="agile css assets">
+
+        <link href="/project_agile/static/src/css/materialize.css" type="text/css" rel="stylesheet"/>
+        <link href="/project_agile/static/src/css/materialNote.css" type="text/css" rel="stylesheet"/>
+        <link href="/project_agile/static/src/css/materialdesignicons.css" type="text/css" rel="stylesheet"/>
+
+        <link href="/project_agile/static/src/css/compiled/ion.rangeSlider.css" rel="stylesheet"/>
+        <link href="/project_agile/static/src/css/compiled/ion.rangeSlider.skinFlat.css" rel="stylesheet"/>
+
+        <link href="/project_agile/static/src/css/project_agile.css" type="text/css" rel="stylesheet"/>
+    </template>
+
+    <template id="assets" name="agile assets">
+        <script type="text/javascript" src="/project_agile/static/src/js/main.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/app_cache.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/core.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/mixins.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/data/dataset.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/data/dependency_cache.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/data/data.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/data/data_service.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/data/data_service_factory.js"/>
+        <script type="text/javascript" src="/web_syncer/static/src/js/syncer.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/hash_service.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/storage_service.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/web_client.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/helper_methods.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/dialog.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/config.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/framework/toast.js"/>
+
+
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/materialize.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/dropify.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/jquery.expander.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/jquery.validate.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/jquery-ui.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/materialNote.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/ion.rangeSlider.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/moment.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/external/waypoint.js"/>
+
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/materialNoteOverrides.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/Sortable.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/pluralize.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/my-jquery-extensions.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/lib/jquery-validate.js"/>
+
+        <script type="text/javascript" src="/project_agile/static/src/js/views/view_manager.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/views/page_manager.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/views/backlog.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/views/kanban_table.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/views/task.js"/>
+
+
+        <script type="text/javascript" src="/project_agile/static/src/js/views/pages/dashboard.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/views/pages/board.js"/>
+
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/attachments.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/base_widget.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/header.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/menu.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/layout.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/model_list.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/board_chooser.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/task_widget.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/task_links.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/modal_widget.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/subheader.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/many2one.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/many2many_tags.js"/>
+        <script type="text/javascript" src="/project_agile/static/src/js/widgets/activity_stream.js"/>
+
+    </template>
+
+    <template id="agile_common_assets" name="Agile Common Assets">
+        <script type="text/javascript" src="/web/static/lib/es5-shim/es5-shim.min.js" />
+        <script type="text/javascript" src="/web/static/lib/underscore/underscore.js" />
+        <script type="text/javascript" src="/web/static/lib/underscore.string/lib/underscore.string.js" />
+        <script type="text/javascript" src="/web/static/lib/moment/moment.js" />
+
+        <script type="text/javascript" src="/web/static/lib/jquery/jquery.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery.ui/jquery-ui.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery/jquery.browser.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery.blockUI/jquery.blockUI.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery.hotkeys/jquery.hotkeys.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery.placeholder/jquery.placeholder.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery.form/jquery.form.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery.ba-bbq/jquery.ba-bbq.js" />
+        <script type="text/javascript" src="/web/static/lib/jquery.mjs.nestedSortable/jquery.mjs.nestedSortable.js" />
+
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/affix.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/alert.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/button.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/carousel.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/collapse.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/dropdown.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/modal.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/tooltip.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/popover.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/scrollspy.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/tab.js" />
+        <script type="text/javascript" src="/web/static/lib/bootstrap/js/transition.js" />
+
+        <script type="text/javascript" src="/web/static/lib/qweb/qweb2.js" />
+        <script type="text/javascript" src="/web/static/src/js/boot.js" />
+        <script type="text/javascript" src="/web/static/src/js/config.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/class.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/translation.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/ajax.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/time.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/mixins.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/widget.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/registry.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/session.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/model.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/dom_utils.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/utils.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/qweb.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/bus.js" />
+        <script type="text/javascript" src="/web/static/src/js/services/core.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/dialog.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/local_storage.js" />
+
+        <script type="text/javascript" src="/web/static/lib/bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js" />
+        <script type="text/javascript" src="/web/static/lib/select2/select2.js" />
+    </template>
+
+
+    <template id="agile_backend_assets" name="Agile Backend Assets">
+
+
+        <script type="text/javascript" src="/web/static/lib/jquery.scrollTo/jquery.scrollTo.js" />
+        <script type="text/javascript" src="/web/static/lib/nvd3/d3.v3.js" />
+        <script type="text/javascript" src="/web/static/lib/nvd3/nv.d3.js" />
+        <script type="text/javascript" src="/web/static/lib/backbone/backbone.js" />
+        <script type="text/javascript" src="/web/static/lib/fuzzy-master/fuzzy.js" />
+
+        <script type="text/javascript" charset="utf-8">
+            odoo._modules =<t t-raw="get_modules_order()"/>;
+        </script>
+
+        <script type="text/javascript" src="/web/static/lib/py.js/lib/py.js" />
+        <!-- Special case: core.js declares $.browser needed by ba-bbq -->
+        <script type="text/javascript" src="/web/static/lib/jquery.ba-bbq/jquery.ba-bbq.js" />
+
+        <script type="text/javascript" src="/web/static/src/js/framework/data_model.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/formats.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/view.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/pyeval.js" />
+        <script type="text/javascript" src="/web/static/src/js/action_manager.js" />
+        <script type="text/javascript" src="/web/static/src/js/control_panel.js" />
+        <script type="text/javascript" src="/web/static/src/js/view_manager.js" />
+        <script type="text/javascript" src="/web/static/src/js/abstract_web_client.js" />
+        <script type="text/javascript" src="/web/static/src/js/web_client.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/data.js" />
+        <script type="text/javascript" src="/web/static/src/js/compatibility.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/misc.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/crash_manager.js" />
+        <script type="text/javascript" src="/web/static/src/js/framework/data_manager.js" />
+        <script type="text/javascript" src="/web/static/src/js/services/crash_manager.js" />
+        <script type="text/javascript" src="/web/static/src/js/services/data_manager.js" />
+        <script type="text/javascript" src="/web/static/src/js/services/session.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/auto_complete.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/change_password.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/debug_manager.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/data_export.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/date_picker.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/loading.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/notification.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/sidebar.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/priority.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/progress_bar.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/pager.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/systray_menu.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/switch_company_menu.js" />
+        <script type="text/javascript" src="/web/static/src/js/widgets/user_menu.js" />
+        <script type="text/javascript" src="/web/static/src/js/menu.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/list_common.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/list_view.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/form_view.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/form_common.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/form_widgets.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/form_upgrade_widgets.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/form_relational_widgets.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/list_view_editable.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/pivot_view.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/graph_view.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/graph_widget.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/search_view.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/search_filters.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/search_inputs.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/search_menus.js" />
+        <script type="text/javascript" src="/web/static/src/js/views/tree_view.js" />
+        <script type="text/javascript" src="/web/static/src/js/apps.js" />
+
+
+        <!--<script type="text/javascript" src="/project_agile/static/src/js/web/project_workflow.js" />-->
+        <script type="text/javascript" src="/bus/static/src/js/bus.js" />
+        <!--<script type="text/javascript" src="/project_workflow/static/src/js/DiagramView.js" />-->
+        <!--<script type="text/javascript" src="/project_workflow/static/src/js/project_workflow.js" />-->
+        <script type="text/javascript" src="/web_diagram_position/static/src/js/graph.js" />
+        <script type="text/javascript" src="/web_diagram_position/static/src/js/web_diagram_position.js" />
+        <script type="text/javascript" src="/web_diagram/static/lib/js/jquery.mousewheel.js" />
+        <script type="text/javascript" src="/web_diagram/static/lib/js/raphael.js" />
+        <script type="text/javascript" src="/web_diagram/static/src/js/vec2.js" />
+        <script type="text/javascript" src="/web_diagram/static/src/js/graph.js" />
+        <script type="text/javascript" src="/web_diagram/static/src/js/diagram.js" />
+    </template>
+</odoo>

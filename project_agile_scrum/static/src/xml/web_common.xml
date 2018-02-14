@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# Copyright 2017 - 2018 Modoolar <info@modoolar.com>
+# License LGPLv3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+-->
+<templates xml:space="preserve">
+    <t t-name="ProjectAgileScrum.form_create_field">
+        <tr t-att-class='"create_" + id'>
+            <td class="o_td_label"><strong><t t-esc="label"/></strong></td>
+            <td t-att-class='"o_td_field create_" + id + "_container"'></td>
+        </tr>
+    </t>
+</templates>

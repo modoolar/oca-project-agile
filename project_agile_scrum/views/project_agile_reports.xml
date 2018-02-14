@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# Copyright 2017 - 2018 Modoolar <info@modoolar.com>
+# License LGPLv3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+-->
+<odoo>
+        <record id="action_burndown_chart" model="ir.actions.client">
+            <field name="name">Burndown Chart</field>
+            <field name="tag">burndown_chart</field>
+        </record>
+
+        <record id="report_burndown_chart" model="project.agile.team.report">
+            <field name="name">Sprint Burndown Chart</field>
+            <field name="description">Sprint Burndown Chart</field>
+            <field name="type">scrum</field>
+            <field name="image_url">project_agile_scrum/static/img/burndown-chart.png</field>
+            <field name="action_id" ref="project_agile_scrum.action_burndown_chart"/>
+        </record>
+
+
+        <record id="action_iteration_burndown_chart" model="ir.actions.client">
+            <field name="name">Iteration Burndown Chart</field>
+            <field name="tag">iteration_burndown_chart</field>
+        </record>
+
+        <record id="report_iteration_burndown_chart" model="project.agile.team.report">
+            <field name="name">Iteration Burndown Chart</field>
+            <field name="description">Iteration Burndown Chart</field>
+            <field name="type">scrum</field>
+            <field name="image_url">project_agile_scrum/static/img/iteration-burndown-chart.png</field>
+            <field name="action_id" ref="project_agile_scrum.action_iteration_burndown_chart"/>
+        </record>
+</odoo>

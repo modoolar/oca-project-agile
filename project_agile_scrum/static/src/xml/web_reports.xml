@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+# Copyright 2017 - 2018 Modoolar <info@modoolar.com>
+# License LGPLv3.0 or later (https://www.gnu.org/licenses/lgpl-3.0.en.html).
+-->
+<templates xml:space="preserve">
+    <t t-name="ProjectAgileScrum.BurndownChart">
+        <div class="o_content">
+             <div class="o_form_view">
+                <div class="o_form_sheet_bg">
+                    <div class="o_form_sheet">
+
+                        <div class="change_sprint_container oe_form o_form">
+                        </div>
+                        <div class="o_group">
+                            <table class="o_group o_inner_group o_group_col_6 create_group_left" style="float:left; display:inline-block"><!-- here come some form_create_field --></table>
+                            <table class="o_group o_inner_group o_group_col_6 create_group_right" style="float:left; display:inline-block" ><!-- here come some form_create_field --></table>
+                        </div>
+                        <div class="web-widget-diagram-container">
+                            <div class="web-widget-diagram-chart-container" style="position: relative; height:30; width:60vw">
+                                <canvas id="chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </t>
+    <t t-name="ProjectAgileScrum.IterationBurndownChart">
+        <div class="o_content">
+             <div class="o_form_view">
+                <div class="o_form_sheet_bg">
+                    <div class="o_form_sheet">
+
+                        <div class="change_sprint_container oe_form o_form">
+                        </div>
+                        <div class="o_group">
+                            <table class="o_group o_inner_group o_group_col_6 create_group_left" style="float:left; display:inline-block"><!-- here come some form_create_field --></table>
+                            <table class="o_group o_inner_group o_group_col_6 create_group_right" style="float:left; display:inline-block" ><!-- here come some form_create_field --></table>
+                        </div>
+                        <div class="web-widget-diagram-container">
+                            <div class="web-widget-diagram-chart-container" style="position: relative; height:30; width:60vw">
+                                <canvas id="chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </t>
+</templates>
