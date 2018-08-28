@@ -132,15 +132,27 @@ class ProjectProject(models.Model):
     def generate_project_key(self, text):
         if not text:
             return ''
-
-        data = text.split(' ')
+        data = text.strip().split(' ')
         if len(data) == 1:
-            return data[0][:3].upper()
+            key = data[0][:3].upper()
+        else:
+            key = []
+            for item in data:
+                if item and item[0].isalnum():
+                    key.append(item[0].upper())
+            key = "".join(key)
+        i = 2
+        base_key = key
+        while self._check_key_exists(key):
+            key = '%s%s' % (base_key, i)
+            i += 1
+        return key
 
-        key = []
-        for item in data:
-            key.append(item[0].upper())
-        return "".join(key)
+    def _check_key_exists(self, key):
+        projects = self.with_context(active_test=False).search([
+            ('key', '=', key)
+        ])
+        return bool(projects)
 
     @api.multi
     def _reindex_task_keys(self):

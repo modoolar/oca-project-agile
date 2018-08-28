@@ -51,12 +51,16 @@ def post_init_hook(cr, registry):
 
     # Set default project task type to the existing tasks
     env['project.task'].sudo()._set_default_task_type_id()
+    task_type_task = env.ref("project_agile.project_task_type_task")
+    cr.execute("UPDATE project_task SET type_id=%s WHERE type_id IS NULL;", (task_type_task.id,))
 
     # and set ``type_id`` field to not null
     cr.execute("ALTER TABLE project_task ALTER COLUMN type_id SET NOT NULL;")
 
     # Set default task priority to the existing tasks
     env['project.task'].sudo()._set_default_task_priority_id()
+    priority_minor = env.ref("project_agile.project_task_priority_minor")
+    cr.execute("UPDATE project_task SET priority_id=%s WHERE priority_id IS NULL;", (priority_minor.id,))
 
     # and set ``priority_id`` field to not null
     cr.execute(
